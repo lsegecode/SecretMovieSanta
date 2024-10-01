@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Movie App{% endblock %}</title>
+
+    <link rel="stylesheet" type="text/css" href="https://bootswatch.com/5/cyborg/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        {% include 'partials/navbar.html' %}
+                
+    </header>
+
+    <div>
+        {% block content %}
+        <!-- Content from child templates goes here -->
+        {% endblock %}
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Secret Movie Santa</p>
+    </footer>
+</body>
+</html>
